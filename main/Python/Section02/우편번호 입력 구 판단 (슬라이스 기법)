@@ -1,0 +1,11 @@
+user = input("우편번호 : ")
+users = user[:3]
+
+if users in ['010','011','012']:
+  com = "강북구"
+elif users in ['014','015','016']:
+  com = "도봉구"
+elif users in ['016','017','018']:
+  com = "노원구"
+
+print(f"{com}")
