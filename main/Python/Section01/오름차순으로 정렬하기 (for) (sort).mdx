@@ -1,0 +1,10 @@
+data = [2,4,3,1,5,10,9]
+for i in range (0,len(data)):
+  for j in range (0,i):
+    if data[i] < data[j]:
+      data[i], data[j] = data[j],data[i]
+print(data)
+=================================
+data = [2,4,3,1,5,10,9]
+data.sort()
+print(data)
