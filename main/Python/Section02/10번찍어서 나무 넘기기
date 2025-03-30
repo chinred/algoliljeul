@@ -1,0 +1,6 @@
+treeHit = 0 //초기값
+while treeHit < 10: //조건
+  treeHit = treeHit + 1 //할때 마다 + 1
+  print("나무를 %d번 찍었습니다." % treeHit)
+  if treeHit == 10: // 10이 될때 끝
+    print("나무 넘어갑니다.")
