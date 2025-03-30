@@ -1,0 +1,5 @@
+user = input("문자 한개를 입력: ") //입력
+if user.islower(): //islower를 통해 만약 사용자가 입력한 값아 소문자일경우 실행
+  print(user.upper()) //upper를 통해 대문자로 바꿔줌
+else:
+  print(user.lower())
