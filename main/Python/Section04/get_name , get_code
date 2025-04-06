@@ -1,0 +1,18 @@
+class Stock:
+  def __init__(self,name,number):
+    self.name = name
+    self.number = number
+  def set_name(self,name):
+    self.name = name
+  def set_code(self,number):
+    self.number = number
+  def get_name(self):
+    return self.name
+  def get_code(self):
+    return self.number
+
+a = Stock("삼성전자",'0059830')
+print(a.name)
+print(a.number)
+print(a.get_name())
+print(a.get_code())
