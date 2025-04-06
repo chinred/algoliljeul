@@ -1,0 +1,2 @@
+def print_value_by_key(my_dict,key):
+    print(my_dict[key])
