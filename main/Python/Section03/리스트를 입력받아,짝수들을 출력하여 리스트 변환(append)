@@ -1,0 +1,8 @@
+def pickup_even(numbers):
+  result = [] #빈칸 배열
+  for number in numbers: #내가 입력한 까지 돌림
+    if number % 2 == 0: #짝수 판별 조건
+      result.append(number) #리스트 요소 추가
+  return result #반환
+
+pickup_even([3,4,5,6,7,8]) # 출력
