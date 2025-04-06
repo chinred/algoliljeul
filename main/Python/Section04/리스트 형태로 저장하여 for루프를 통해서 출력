@@ -1,0 +1,35 @@
+class Stock:
+  def __init__(self,name,code,per,pbr,배당수익률):
+    self.name = name
+    self.code = code
+    self.per = per
+    self.pbr = pbr
+    self.배당수익률 = 배당수익률
+  def set_name(self,name):
+    self.name = name
+  def set_code(self,code):
+    self.code = code
+  def per(self,per):
+    self.per = per
+  def pbr(self,pbr):
+    self.pbr = pbr
+  def 배당수익률(self,배당수익률):
+    self.배당수익률 = 배당수익률
+  def set_per(self):
+    self.per = per
+  def set_pbr(self):
+    self.pbr = pbr
+  def set_dividend(self):
+    self.배당수익률 = 배당수익률
+
+종목 = [] #빈 배열 생성
+
+a = Stock("삼성전자",'0059830',15.79,1.33,2.83)
+b = Stock("현대차",'005380',8.70,0.35,4.27)
+c = Stock("Lg",'066570',317.34,0.69,1.37)
+
+종목.append(a) #append를 통해 담음
+종목.append(b)
+종목.append(c)
+for i in 종목: #종목까지 돌림
+  print(i.code , i.per) #출력 code,per를 
