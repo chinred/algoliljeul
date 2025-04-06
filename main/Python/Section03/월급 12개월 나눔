@@ -1,0 +1,4 @@
+def calc_monthly_salary(annual_salary):
+    return print(int(annual_salary / 12)) #12로 나누고 형변환
+
+calc_monthly_salary(120000) #출력
