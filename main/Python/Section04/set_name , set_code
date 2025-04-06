@@ -1,0 +1,11 @@
+class Stock:
+  def __init__(self,name,number):
+    self.name = name
+    self.number = number
+  def set_name(self,name):
+    self.name = name
+  def set_code(self,number):
+    self.number = number
+    
+a = Stcok("삼성전자")
+print(a.name)
