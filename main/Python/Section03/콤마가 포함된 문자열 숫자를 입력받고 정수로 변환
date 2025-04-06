@@ -1,0 +1,4 @@
+def pickup_even(string):
+  return int(string.replace(',','')) #replace 문자열 바꾸기
+
+pickup_even("1,234,567")
