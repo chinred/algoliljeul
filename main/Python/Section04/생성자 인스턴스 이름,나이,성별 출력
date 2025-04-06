@@ -1,0 +1,62 @@
+class Human:
+  def __init__(self,name,age,sex):
+      self.name = name
+      self.age = age
+      self.sex = sex
+
+areum = Human("아름",25,"여자")
+areum.name
+===============================
+
+class Human:
+  def __init__(self,name,age,sex):
+      self.name = name
+      self.age = age
+      self.sex = sex
+  def who(self):
+      print("이름: {} 나이: {} 성별: {}". format(self.name, self.age,self.sex))
+
+
+areum = Human("아름",25,"여자")
+areum.who()
+===============================
+class Human:
+  def __init__(self,name,age,sex):
+      self.name = name
+      self.age = age
+      self.sex = sex
+  def who(self):
+      print("이름: {} 나이: {} 성별: {}". format(self.name, self.age,self.sex))
+
+  def setinfo(self):
+     self.name = name
+     self.age =  age
+     self.sex =  sex
+
+areum = Human("아름",25,"여자")
+areum.who()
+
+areum = Human("아름",29,"여자")
+areum.setinfo()
+
+===============================
+class Human:
+  def __init__(self,name,age,sex):
+      self.name = name
+      self.age = age
+      self.sex = sex
+  def __del__(self):
+      print("태어나지않음") 
+  def who(self):
+      print("이름: {} 나이: {} 성별: {}". format(self.name, self.age,self.sex))
+
+  def setinfo(self):
+      self.name = nmae
+      self.age =  age
+      self.sex =  sex
+
+areum = Human("아름",25,"여자")
+areum.who()
+
+areum = Human("아름",29,"여자")
+areum.setinfo()
