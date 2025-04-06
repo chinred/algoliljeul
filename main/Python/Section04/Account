@@ -1,0 +1,57 @@
+import random  # 랜덤 기능을 사용하기 위한 모듈 임포트
+
+class Account:
+    account_count = 0
+    # 계좌 생성자 메서드 
+    # name: 계좌 소유자 이름
+    # balance: 초기 예금 금액
+    def __init__(self, name, balance):
+        # 입금 횟수를 추적하는 변수 (이자 계산에 사용)
+        self.deposit_count = 0
+        
+        # 계좌 소유자 이름 저장
+        self.name = name 
+        
+        # 계좌 잔액 저장
+        self.balance = balance 
+        
+        # 은행 이름 고정
+        self.bank = "SC은행" 
+        
+        # 랜덤 계좌번호 생성
+        # 첫 번째 부분: 000-999 사이의 3자리 숫자
+        num1 = random.randint(0, 999)
+        
+        # 두 번째 부분: 00-99 사이의 2자리 숫자
+        num2 = random.randint(0, 99)
+        
+        # 세 번째 부분: 000000-999999 사이의 6자리 숫자
+        num3 = random.randint(0, 999999)
+
+        # 숫자를 문자열로 변환하고 앞에 0을 채워 고정 자리수 만들기
+        # zfill(): 문자열의 왼쪽에 0을 채워 지정된 길이로 만드는 메서드
+        num1 = str(num1).zfill(3)  # 3자리로 만들기 
+        num2 = str(num2).zfill(2)  # 2자리로 만들기
+        num3 = str(num3).zfill(6)  # 6자리로 만들기
+        
+        # 하이픈(-)으로 구분된 계좌번호 생성
+        self.account_number = num1 + '-' + num2 + '-' + num3
+        Account.account_count +=1 
+
+    @classmethod
+    def get_account_num(cls):
+      print(cls.account_count)
+    
+    def deposit(self,amount):
+      if amount >= 1:
+        self.balance += amount
+
+    def withdarw(self,amount):
+      if self.balance > amount:
+        self.balance -= amount
+
+k = Account("kim",100)
+k.deposit(100)
+k.withdarw(90)
+kim.get_account_num()
+
