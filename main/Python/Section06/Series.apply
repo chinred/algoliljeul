@@ -1,0 +1,6 @@
+import pandas as pd
+from pandas import Series
+
+s = pd.Series([10,100,1000])
+np.log10(100)
+s.apply(np.log10)
