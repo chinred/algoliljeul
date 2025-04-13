@@ -1,0 +1,6 @@
+import pandas as pd
+from pandas import Series
+
+s = pd.Series([1,2,3], index=['2023-01-01','2023-01-02','2023-01-03'])
+s.index = s.index.str[5:] #술라싱을 사용해서 5번쨰 부터 출력
+print(s.index)
