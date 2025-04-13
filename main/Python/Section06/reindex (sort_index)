@@ -1,0 +1,19 @@
+import numpy as np
+from pandas import Series
+
+data = [1,2,3,4]
+index = ['d','c','a','b']
+s = Series(data,index)
+s = s.sort_index()
+
+print(s)
+
+import numpy as np
+import pandas as pd
+from pandas import Series
+
+s = pd.Series([1,2,3,4], index=['d','c','a','b'])
+s = s.sort_index()
+
+print(s)
+
