@@ -1,0 +1,8 @@
+data = ["30세","40세","50세"]
+index = ["김대리","이과장","박차장"]
+s = Series(data,index)
+
+s1 = s.str[:-1] #슬라이싱 -1번째 즉 세를 지움
+s1 = s1.astype('int32') #int32 형 변환
+
+print(s1) #그리고 출력
