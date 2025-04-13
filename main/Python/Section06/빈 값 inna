@@ -1,0 +1,6 @@
+import numpy as np
+from pandas import Series
+
+data = [1,2,3,4,np.nan]
+s = Series(data=data)
+print(s.isna().sum())
