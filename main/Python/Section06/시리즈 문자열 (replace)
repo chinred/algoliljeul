@@ -1,0 +1,5 @@
+data = ["100,000","200,000","300,000"]
+index = [ "철수", "영희", "아름"]
+s = Series(data,index)
+s1 = s.str.replace(",","").astype("int32") #replace로 바꾸고 타입 변경
+print(s1)
