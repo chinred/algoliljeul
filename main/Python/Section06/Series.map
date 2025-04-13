@@ -1,0 +1,7 @@
+import pandas as pd
+from pandas import Series
+s = pd.Series(['1,234','5,678','9,876'])
+
+def remove_comma( x ):
+  return x.replace(",","")
+s.map(remove_comma)
