@@ -1,0 +1,5 @@
+data = ["100","200","300"]
+index = [ "철수", "영희", "아름"]
+s = Series(data,index)
+
+s.astype(np.int32) #int32로 형 변환
